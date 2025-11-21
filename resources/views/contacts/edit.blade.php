@@ -33,7 +33,7 @@
                     @method('PUT')
 
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nome</label>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Name</label>
                         <input type="text" name="name" id="name" 
                                value="{{ old('name', $contact->name) }}" 
                                required 
@@ -49,7 +49,7 @@
                     </div>
 
                     <div>
-                        <label for="number" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Telefone</label>
+                        <label for="number" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Phone</label>
                         <input type="text" name="number" id="number" 
                                value="{{ old('number', $contact->number) }}" 
                                required pattern="\d{9}" title="Digite 9 dígitos"
@@ -58,7 +58,7 @@
 
                 </form>
 
-                <form action="{{ route('contacts.destroy', $contact->id) }}" method="POST" onsubmit="return confirm('Deseja realmente excluir este contato?')" id="delete-contact-form">
+                <form action="{{ route('contacts.destroy', $contact->id) }}" method="POST" onsubmit="return confirm('Do you really want to delete this contact?')" id="delete-contact-form">
                         @csrf
                         @method('DELETE')
                 </form>

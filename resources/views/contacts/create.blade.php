@@ -29,7 +29,7 @@
                     @csrf
 
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nome</label>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Name</label>
                         <input type="text" name="name" id="name" 
                                value="{{ old('name') }}" 
                                required 
@@ -45,7 +45,7 @@
                     </div>
 
                     <div>
-                        <label for="number" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Telefone</label>
+                        <label for="number" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Phone</label>
                         <input type="text" name="number" id="number" 
                                value="{{ old('number') }}" 
                                required pattern="\d{9}" title="Digite 9 dígitos"
@@ -59,7 +59,7 @@
                         </a>
                         <button type="submit" 
                                 class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                            Salvar Contato
+                            Save Contact
                         </button>
                     </div>
                 </form>

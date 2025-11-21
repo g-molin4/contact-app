@@ -3,11 +3,11 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-                {{ __('Contatos') }}
+                {{ __('Contacts') }}
             </h2>
             <a href="{{ route('contacts.create') }}" 
             class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            Adicionar Contato
+            Add Contact
             </a>
         </div>
     </x-slot>
@@ -33,16 +33,16 @@
                                     <div class="mt-4 flex justify-between">
                                         <a href="{{ route('contacts.edit', $contact->id) }}" 
                                         class="px-3 py-1 bg-yellow-500 text-white rounded hover:bg-yellow-600">
-                                        Editar
+                                        Edit
                                         </a>
 
                                         <form action="{{ route('contacts.destroy', $contact->id) }}" method="POST" 
-                                            onsubmit="return confirm('Deseja realmente excluir este contato?')">
+                                            onsubmit="return confirm('Do you really want to delete this contact?')">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" 
                                                     class="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600">
-                                                Excluir
+                                                Delete
                                             </button>
                                         </form>
                                     </div>
@@ -51,7 +51,7 @@
                         @endforeach
                     </div>
                 @else
-                    <p class="text-gray-600 dark:text-gray-300 dark:text-white-200">Nenhum contato cadastrado.</p>
+                    <p class="text-gray-600 dark:text-gray-300 dark:text-white-200">No contacts added</p>
                 @endif
             </div>
         </div>
