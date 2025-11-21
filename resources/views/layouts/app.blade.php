@@ -12,8 +12,8 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        <link rel="stylesheet" href="/build/assets/app.css">
-        <script src="/build/assets/app.js" defer></script>
+        <link rel="stylesheet" href="/build/assets/app-DlIs8uZ2.css">
+        <script src="/build/assets/app-kGY04szw.js" defer></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
